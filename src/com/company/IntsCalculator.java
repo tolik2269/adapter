@@ -19,7 +19,7 @@ public class IntsCalculator implements Ints{
         return (int) target.newFormula()
                 .addOperand(arg0)
                 .addOperand(arg1)
-                .calculate(Calculator.Operation.SUM)
+                .calculate(Calculator.Operation.MULT)
                 .result();
     }
 
@@ -28,7 +28,7 @@ public class IntsCalculator implements Ints{
         return (int) target.newFormula()
                 .addOperand(a)
                 .addOperand(b)
-                .calculate(Calculator.Operation.SUM)
+                .calculate(Calculator.Operation.POW)
                 .result();
     }
 }
